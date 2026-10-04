@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and ideas
+    url: https://github.com/s-simoncelli/pywr-vscode/discussions
+    about: Ask how to use the extension or suggest a new feature
+

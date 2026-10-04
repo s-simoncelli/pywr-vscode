@@ -1,0 +1,104 @@
+name: Bug report
+description: Report something that does not work as expected in the Pywr extension
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to report a problem. Before you continue, please
+        search the existing issues and check the "Troubleshooting" section of the README.
+        For questions and ideas, use the
+        [discussions](https://github.com/s-simoncelli/pywr-vscode/discussions) instead.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem, and what you expected to happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The steps that lead to the problem, starting from opening the model.
+      placeholder: |
+        1. Open the model
+        2. Click on ...
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Model format
+      options:
+        - pywr-1
+        - pywr-2
+        - Both
+        - Not related to a model
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where is the problem?
+      multiple: true
+      options:
+        - Validation and diagnostics
+        - Network or External data tree
+        - Forms
+        - Schematic
+        - Search
+        - Running a model
+        - Results charts
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: extension-version
+    attributes:
+      label: Extension version
+      description: Shown in the Extensions view, next to the extension name.
+      placeholder: "1.2.0"
+    validations:
+      required: true
+  - type: input
+    id: vscode-version
+    attributes:
+      label: VS Code version
+      description: Shown in "Help" > "About" ("Code" > "About Visual Studio Code" on macOS).
+      placeholder: "1.110.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+  - type: textarea
+    id: model
+    attributes:
+      label: Model to reproduce the problem
+      description: >
+        A small model that shows the problem, if you can share one. Remove any
+        confidential data first.
+      render: json
+  - type: textarea
+    id: log
+    attributes:
+      label: Extension log
+      description: >
+        Turn on the "Pywr: Enable Logging" setting, reproduce the problem, then copy the
+        content of the "pywr" channel in the Output panel ("View" > "Output").
+      render: text
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Useful when the problem is in the schematic, a form or a chart.
+
