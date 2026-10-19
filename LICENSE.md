@@ -19,6 +19,15 @@ Without the prior written permission of the copyright holder, you may not:
   despite this restriction;
 - remove or alter any copyright or licence notice in the Software.
 
+## Pywr v1 scripts
+
+The Python scripts that run Pywr v1 models in a separate process are not covered by this
+licence. They are free software, released under the GNU General Public License, version 3
+or (at your option) any later version. They are installed with the extension, in the
+`resources/pywr-v1` folder of its installation folder, together with the licence text in
+`resources/pywr-v1/COPYING`. You can also request a copy of their source code by opening
+an issue at <https://github.com/s-simoncelli/pywr-vscode/issues>.
+
 ## Third-party software
 
 
